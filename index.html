@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" >
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="navBar">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a>
+            <a href="ST_2023_Resume.pdf">Resume</a>
+        </div>
+        <div class="bigContainer">
+            <div class="container">
+                <h1 class="floating-text-up" id="bioName">Sule Tekin</h1>
+                <h1 class="CWTitle" id="CWTitle" style="display: none">Related Coursework</h1>
+                <h2 class="floating-text-up" id="bioTitle" style="font-size: 50px;">Computer Science Graduate</h2>
+                
+                <div class="container">
+                    <img src="icons/bigBadge.svg" width="600px" id="bioMe" class="badge-image">
+                </div>
+
+                <div class= "shortBio" id="shortBio">
+                    <p class="">Hi there! My name is Sule. I'm a recent graduate from the <a class="UT" href="https://www.utexas.edu">University of Texas at Austin</a>, 
+                        with a major in <a class="UTCS" href="https://www.cs.utexas.edu">Computer Science</a> and a minor in Arabic. I enjoy building front-end websites,
+                        knitting and crocheting, and working out.</p>
+                </div>
+
+                <div class="relatedCoursework" id="relatedCoursework" style="display: none;">
+                    <ul>
+                        <li>Data Structures</li>
+                        <li>Computer Architecture</li>
+                        <li>Operating Systems</li>
+                        <li>Machine Learning</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Web Applications</li>
+                        <li>Algorithms and Complexity</li>
+                        <li>Wireless Networks</li>
+                        <li>iOS Mobile App Development</li>
+                        <li>Software Engineering</li>
+                    </ul>
+                </div>
+
+                <div class="link">
+                    <a href="#" onclick="showRelatedCoursework()" id="courseworkLink" class="RCW">Related Coursework</a>
+                </div>
+
+                <div>
+                    <a href="index.html" class="backButton" id="back" style="display: none;">Back</a>
+                </div>
+
+                <br>
+                <div class="addLinks" id="links">
+                    <div class="link" >
+                        <a style="color: #495E57" id="github" href="https://github.com/suletekin"> <img src="icons/github.svg" width="100px"></a>
+                    </div>
+                    <br>
+                    <div class="link" style="margin-top: 20px;">
+                        <a style="color: #362FD9" id="linkedin" href="https://www.linkedin.com/in/sule-tekin/"> <img src="icons/linkedin.svg" width="80px"></a>
+                    </div>
+                    <br>
+                    <div class="link" style="margin-top: 15px;">
+                        <a style="color: #FF90C2" id="email" href="mailto:suletekin@utexas.edu"> <img src="icons/email.svg" width="100px"></a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </body>
+</html>

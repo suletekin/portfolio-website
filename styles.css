@@ -1,0 +1,380 @@
+body{
+    background-image: url('/moreDarkPurple.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+}
+
+.shortBio {
+    font-size: 45px;
+    color: #7d8abe;
+    max-width: 1000px;
+}
+
+.link a {
+    margin-right: 50px;
+}
+
+.RCW {
+    text-decoration: none;
+    font-size: 50px;
+    padding: 10px 20px;
+    border: 3px solid;
+    border-radius: 20px;
+    color: #A25772;
+}
+
+.CWTitle {
+    color: #83A2FF;
+}
+
+.CWTitle:hover {
+    color: antiquewhite;
+}
+
+.addLinks {
+    text-align: left;
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 5px solid;
+    border-radius: 20px;
+    color: #FFDBC3;
+    display: flex;
+}
+
+.addLinks:hover {
+    background-color: hsl(247, 34%, 29%, 0.65);
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: #67729D;
+    position: relative;
+}
+
+.virgo:hover {
+    color: #3876BF;
+}
+
+.turkish:hover {
+    color: red;
+}
+
+.popup-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position it to the right of the text */
+    transform: translateX(50px); /* Add some space between text and image */
+}
+
+.turkish:hover + .popup-image {
+    display: block;
+}
+
+.nomad:hover {
+    color: blue;
+}
+
+.NDF:hover {
+    color: pink;
+}
+
+.NDF::after {
+    content: "My fav couple is Anna & Mursel";
+    font-size: 50px;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.NDF:hover::after {
+    display: block;
+}
+
+.list h1,
+.list ul {
+    display: block;
+    margin-left: 400px;
+    color: #67729D;
+}
+
+.list h1:hover,
+.list li:hover {
+    color: antiquewhite;
+}
+
+.link a:hover{
+    color: antiquewhite !important;
+}
+
+.relatedCoursework li {
+    color:#67729D
+}
+
+.relatedCoursework li:hover {
+    color: #AEC3AE;
+}
+
+.container li {
+    font-size: 50px;
+}
+
+.container li:hover{
+    color: antiquewhite;
+}
+
+.category {
+    display: block; /* Make anchor tags block-level to center them */
+    margin-bottom: 20px; /* Add some space between links */
+    text-decoration: none;
+    font-size: 70px;
+    padding-top: 100px;
+    color: #99627A;
+}
+
+.category:hover {
+    color: antiquewhite;
+}
+
+.backButton {
+    text-decoration: none;
+    font-size: 50px;
+    padding: 10px 20px;
+    border: 3px solid;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.backButton:hover {
+    color: #BE5A83;
+}
+
+
+.UT {
+    color: orange;
+    text-decoration: none;
+}
+
+.UT:hover {
+    color: antiquewhite;
+}
+
+.UTCS {
+    color: rgb(140, 100, 234);
+    text-decoration: none;
+}
+
+.UTCS:hover {
+    color: antiquewhite;
+}
+
+.navBar a {
+    text-decoration: none;
+    font-size: 80px;
+    color: #504099;
+    margin-left: 200px;
+    margin-right: 50px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 200px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1600px) {
+    .navBar {
+        text-align: center; /* Center the links for small screens */
+    }
+
+    .navBar a {
+        width: 100%; /* Make each link take up the full width */
+        display: block; /* Display links as block elements for better stacking */
+        margin: 10px 0; /* Add some space between links */
+    }
+}
+
+/* Responsive styles for smaller screens, including iPhones */
+@media screen and (max-width: 767px) {
+    .navBar {
+        text-align: center; /* Center the links for small screens */
+    }
+
+    .navBar a {
+        width: 100%; /* Make each link take up the full width */
+        display: block; /* Display links as block elements for stacking */
+        margin: 10px 0; /* Add space between links */
+        font-size: 24px; /* Adjust the font size for better mobile readability */
+    }
+
+    #bioName {
+        font-size: 30px;
+    }
+
+    #bioTitle {
+        font-size: 30px;
+    }
+
+
+}
+
+.navBar a:hover{
+    color: aliceblue;
+}
+
+
+.bigContainer {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: #FF869E;
+}
+
+.title:hover{
+    color: #900C3F;
+}
+
+.pixelated-rectangle {
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    width: 500px; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    background-color: #3B185F; /* Replace with your desired color code */
+    background-size: 20px 20px; /* Adjust the pixel size */
+    filter: blur(1px); /* Blur to create pixelated effect */
+    position: relative;
+    margin-left:4dvw;
+    margin-top:5dvh;
+    display: block;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    color: #46458C;
+    border-top: 5px solid #4D4C7D;
+    border-right: 12px solid #4D4C7D;
+    border-bottom:8px solid #4D4C7D;
+    border-left: 6px solid #4D4C7D;
+    border-radius: 10px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1600px) {
+    .pixelated-rectangle {
+        width: 80%; /* Adjust the width for smaller screens */
+        height: 80%;
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow the items to wrap to the next line */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    /* Adjust the width of each pixelated-rectangle in smaller screens */
+    .pixelated-rectangle {
+        width: calc(33.33% - 20px); /* 20px for margin between items */
+        margin: 10px; /* Adjust margin for space between items */
+    }
+}
+
+.pixelated-rectangle:hover {
+    background-color: #A25772;
+    color: #643A6B;
+    border-top: 5px solid #4D3C77;
+    border-right: 12px solid #4D3C77;
+    border-bottom:8px solid #4D3C77;
+    border-left: 6px solid #4D3C77;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.linkRow a {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #7d8abe;
+}
+
+.additionalLinks a {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #7d8abe;
+    border: 2px solid;
+    padding: 10px 15px;
+    border-radius: 40px;
+}
+
+.button:hover {
+    background-color: #0056b3
+}
+
+.name {
+    color: #67729D;
+}
+
+@keyframes floating-up {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+@keyframes floating-down {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+  
+.floating-text-up {
+    font-size: 80px;
+    animation: floating-up 1s infinite; /* Use the "floating" animation for 2 seconds, and repeat infinitely */
+    color: #67729D;
+    text-decoration: none;
+}
+
+.floating-text-down {
+    font-size: 80px;
+    animation: floating-down 1s infinite; /* Use the "floating" animation for 2 seconds, and repeat infinitely */
+    color: #67729D;
+    text-decoration: none;
+}
+
+
