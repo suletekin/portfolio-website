@@ -44,6 +44,7 @@ body{
     border-radius: 20px;
     color: #FFDBC3;
     display: flex;
+    width: auto;
 }
 
 .addLinks:hover {
@@ -190,10 +191,46 @@ body{
     padding-bottom: 200px;
 }
 
+.navBar a:hover{
+    color: aliceblue;
+}
+
+#github {
+    width: 160px;
+}
+
+#linkedin {
+    width: 128px;
+}
+
+#email {
+    width: 160px;
+}
+
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 1600px) {
+    .pixelated-rectangle {
+        width: 80%; /* Adjust the width for smaller screens */
+        height: 80%;
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow the items to wrap to the next line */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    /* Adjust the width of each pixelated-rectangle in smaller screens */
+    .pixelated-rectangle {
+        width: calc(33.33% - 20px); /* 20px for margin between items */
+        margin: 10px; /* Adjust margin for space between items */
+    }
+
     .navBar {
         text-align: center; /* Center the links for small screens */
+        padding-bottom: 10px;
     }
 
     .navBar a {
@@ -201,12 +238,35 @@ body{
         display: block; /* Display links as block elements for better stacking */
         margin: 10px 0; /* Add some space between links */
     }
+
+    #bioName {
+        font-size: 50px;
+        max-height: 200px;
+    }
+
+    #bioTitle {
+        font-size: 50px;
+    }
+
+    #github {
+        width: 100px;
+    }
+
+    #linkedin {
+        width: 80px;
+    }
+
+    #email {
+        width: 100px;
+    }
+
 }
 
 /* Responsive styles for smaller screens, including iPhones */
 @media screen and (max-width: 767px) {
     .navBar {
         text-align: center; /* Center the links for small screens */
+        padding-bottom: 100px;
     }
 
     .navBar a {
@@ -224,19 +284,74 @@ body{
         font-size: 30px;
     }
 
+    #bioMe {
+        width: 250px;
+    }
+
+    .shortBio {
+        font-size: 25px;
+        max-width: 300px;
+    }
+
+    .RCW{
+        font-size: 30px;
+    }
+
+    .relatedCoursework li, .CWTitle {
+        font-size: 30px;
+    }
+
+    #github {
+        width: 80px;
+    }
+
+    #linkedin{
+        width: 64px;
+    }
+
+    #email {
+        width: 80px;
+    }
+
+    .addLinks{
+        justify-content: center;
+        padding: 5px 5px 5px 10px;
+    }
+
+    .container h1{
+        width: 100%; /* Make each link take up the full width */
+        display: flex; /* Display links as block elements for stacking */
+        flex-direction: column;
+        font-size: 34px; /* Adjust the font size for better mobile readability */
+    }
+
+    .list h1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .list ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        justify-content: center;
+        font-size: 30px;
+    }
+    
+
+
 
 }
 
-.navBar a:hover{
-    color: aliceblue;
-}
 
 
 .bigContainer {
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
-    height: 100vh;
 }
 
 .container{
@@ -244,6 +359,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .title{
@@ -277,27 +393,6 @@ body{
     border-radius: 10px;
 }
 
-/* Responsive styles for smaller screens */
-@media screen and (max-width: 1600px) {
-    .pixelated-rectangle {
-        width: 80%; /* Adjust the width for smaller screens */
-        height: 80%;
-        margin-left: auto; /* Center horizontally */
-        margin-right: auto;
-    }
-
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap; /* Allow the items to wrap to the next line */
-        justify-content: center; /* Center items horizontally */
-    }
-
-    /* Adjust the width of each pixelated-rectangle in smaller screens */
-    .pixelated-rectangle {
-        width: calc(33.33% - 20px); /* 20px for margin between items */
-        margin: 10px; /* Adjust margin for space between items */
-    }
-}
 
 .pixelated-rectangle:hover {
     background-color: #A25772;
