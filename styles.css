@@ -181,6 +181,7 @@ body{
     text-decoration: none;
     font-size: 80px;
     color: #504099;
+    color: #FFD1E3;
     margin-left: 200px;
     margin-right: 50px;
 }
@@ -193,6 +194,7 @@ body{
 
 .navBar a:hover{
     color: aliceblue;
+    color: #504099;
 }
 
 #github {
@@ -237,6 +239,11 @@ body{
         width: 100%; /* Make each link take up the full width */
         display: block; /* Display links as block elements for better stacking */
         margin: 10px 0; /* Add some space between links */
+    }
+
+    .relatedCoursework li {
+        font-size: 50px;
+        text-align: left;
     }
 
     #bioName {
@@ -297,7 +304,12 @@ body{
         font-size: 30px;
     }
 
-    .relatedCoursework li, .CWTitle {
+    .relatedCoursework li {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .CWTitle {
         font-size: 30px;
     }
 
@@ -337,10 +349,16 @@ body{
         display: flex;
         flex-direction: column;
         margin-left: 30px;
-        justify-content: center;
+        justify-content: left;
         font-size: 30px;
+        text-align: left;
     }
-    
+
+    .category {
+    margin-bottom: 10px;
+    font-size: 10px;
+    padding-top: 30px;
+}
 
 
 
