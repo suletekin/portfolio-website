@@ -15,6 +15,11 @@ body{
     max-width: 1000px;
 }
 
+.relatedCoursework li {
+    font-size: 50px;
+    text-align: left;
+}
+
 .link a {
     margin-right: 50px;
 }

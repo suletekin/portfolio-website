@@ -58,11 +58,3 @@ function showShortBio() {
         showRelatedCoursework();
     };
 }
-
-let shortBio = "Hi there! My name is Sule. I'm a recent graduate from the University of Texas at Austin, with a major in Computer Science and a minor in Arabic. I enjoy building front-end websites, knitting and crochetting, and working out."
-
-let longBio = "this is gonna be my long bio"
-
-let turkishBio = "Merhaba! Ben Şule. Austin'deki Texas Üniversitesi'nden yeni mezun oldum. Ana dal olarak Bilgisayar Bilimleri ve Arapça yan dalıyla mezun oldum. Web siteleri oluşturmayı, örgü örmeyi, tığ işi yapmayı ve egzersiz yapmayı seviyorum."
-
-let courseWork = "SWE, OOP, Data Structures"
