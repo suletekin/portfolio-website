@@ -38,18 +38,17 @@ body{
 }
 
 .linkOther {
-    text-align: left;
     text-decoration: none;
-    padding: 20px 40px;
     border: 10px solid;
+    padding: 20px 20px 20px 20px;
     border-radius: 20px;
     color: #FFDBC3;
     display: flex;
     width: auto;
     background-color: hsl(247, 34%, 29%, 0.65);
     margin-right: 30px;
-    height: 200px;
-    width: 150px;
+    height: 170px;
+    width: 170px;
 }
 
 .linkOther:hover {
@@ -208,17 +207,22 @@ body{
 
 #github {
     width: 160px;
+    padding-top: 10px;
 }
 
 #linkedin {
-    width: 128px;
+    width: 120px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 #email {
-    width: 280px;
+    width: 130px;
+    padding-top: 40px;
+    padding-left: 20px;
 }
 
-/* Responsive styles for smaller screens */
+/* Responsive styles for smaller (laptop) screens */
 @media screen and (max-width: 1600px) {
     .pixelated-rectangle {
         width: 80%; /* Adjust the width for smaller screens */
@@ -265,20 +269,22 @@ body{
     }
 
     #github {
-        width: 100px;
+        width: 150px;
+        padding-left: 10px;
+        padding-top: 15px;
     }
 
     #linkedin {
-        width: 80px;
+        width: 120px;
     }
 
     #email {
-        width: 100px;
+        width: 120px;
     }
 
 }
 
-/* Responsive styles for smaller screens, including iPhones */
+/* Responsive styles for smaller (smartphone) screens */
 @media screen and (max-width: 767px) {
     .navBar {
         text-align: center; /* Center the links for small screens */
@@ -309,6 +315,41 @@ body{
         max-width: 300px;
     }
 
+    .linkOther {
+        text-decoration: none;
+        border: 7px solid;
+        padding: 10px 10px 10px 10px;
+        border-radius: 20px;
+        color: #FFDBC3;
+        width: auto;
+        background-color: hsl(247, 34%, 29%, 0.65);
+        margin-right: 15px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .addLinks {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #github {
+        width: 35px;
+        padding-bottom: 100px;
+    }
+    
+    #linkedin {
+        width: 50px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    
+    #email {
+        width: 50px;
+        padding-top: 5px;
+        padding-left: 0px;
+    }
+
     .RCW{
         font-size: 30px;
     }
@@ -320,18 +361,6 @@ body{
 
     .CWTitle {
         font-size: 30px;
-    }
-
-    #github {
-        width: 80px;
-    }
-
-    #linkedin{
-        width: 64px;
-    }
-
-    #email {
-        width: 80px;
     }
 
     .addLinks{
