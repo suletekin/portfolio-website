@@ -20,10 +20,6 @@ body{
     text-align: left;
 }
 
-.link a {
-    margin-right: 50px;
-}
-
 .RCW {
     text-decoration: none;
     font-size: 50px;
@@ -41,21 +37,29 @@ body{
     color: antiquewhite;
 }
 
-.addLinks {
+.linkOther {
     text-align: left;
     text-decoration: none;
     padding: 20px 40px;
-    border: 5px solid;
+    border: 10px solid;
     border-radius: 20px;
     color: #FFDBC3;
     display: flex;
     width: auto;
-}
-
-.addLinks:hover {
     background-color: hsl(247, 34%, 29%, 0.65);
+    margin-right: 30px;
+    height: 200px;
+    width: 150px;
 }
 
+.linkOther:hover {
+    background-color: rgba(238, 245, 255, 0.6);
+}
+
+.addLinks {
+    display: flex;
+    flex-direction: row;
+}
 
 .row {
     display: flex;
@@ -211,7 +215,7 @@ body{
 }
 
 #email {
-    width: 160px;
+    width: 280px;
 }
 
 /* Responsive styles for smaller screens */
