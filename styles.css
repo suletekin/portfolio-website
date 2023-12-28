@@ -40,20 +40,44 @@ body{
 .linkOther {
     text-decoration: none;
     border: 10px solid;
-    padding: 20px 20px 20px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: #FFDBC3;
     display: flex;
     width: auto;
     background-color: hsl(247, 34%, 29%, 0.65);
     margin-right: 30px;
-    height: 170px;
-    width: 170px;
+    height: 150px;
+    width: 150px;
 }
+
+#github {
+    position: relative;
+    width: 130px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+    
+#linkedin {
+    position: relative;
+    width: 100px;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+    
+#email {
+    position: relative;
+    width: 150px;
+    padding-top: -50px;
+    padding-left: -20px;
+}
+
+
+
 
 .linkOther:hover {
     background-color: rgba(238, 245, 255, 0.6);
 }
+
 
 .addLinks {
     display: flex;
@@ -205,22 +229,6 @@ body{
     color: #504099;
 }
 
-#github {
-    width: 160px;
-    padding-top: 10px;
-}
-
-#linkedin {
-    width: 120px;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-#email {
-    width: 130px;
-    padding-top: 40px;
-    padding-left: 20px;
-}
 
 /* Responsive styles for smaller (laptop) screens */
 @media screen and (max-width: 1600px) {
@@ -268,18 +276,36 @@ body{
         font-size: 50px;
     }
 
+    .linkOther {
+        text-decoration: none;
+        border: 7px solid;
+        border-radius: 10px;
+        color: #FFDBC3;
+        width: auto;
+        background-color: hsl(247, 34%, 29%, 0.65);
+        margin-right: 15px;
+        height: 120px;
+        width: 120px;
+    }
+
     #github {
-        width: 150px;
+        position: relative;
+        width: 100px;
         padding-left: 10px;
-        padding-top: 15px;
+        padding-top: 10px;
     }
 
     #linkedin {
-        width: 120px;
+        position: relative;
+        width: 85px;
+        top: -10px;
+        left: -10px;
     }
 
     #email {
+        position: relative;
         width: 120px;
+        padding-top: -80px;
     }
 
 }
@@ -318,14 +344,13 @@ body{
     .linkOther {
         text-decoration: none;
         border: 7px solid;
-        padding: 10px 10px 10px 10px;
-        border-radius: 20px;
+        border-radius: 10px;
         color: #FFDBC3;
         width: auto;
         background-color: hsl(247, 34%, 29%, 0.65);
         margin-right: 15px;
-        height: 50px;
-        width: 50px;
+        height: 70px;
+        width: 70px;
     }
 
     .addLinks {
@@ -334,20 +359,24 @@ body{
     }
 
     #github {
-        width: 35px;
-        padding-bottom: 100px;
+        position: relative;
+        width: 60px;
+        left: -5px;
+        top: -5px;
     }
     
     #linkedin {
+        position: relative;
         width: 50px;
-        padding-top: 0px;
-        padding-left: 0px;
+        padding-top: 20px;
+        padding-left: 20px;
     }
     
     #email {
-        width: 50px;
-        padding-top: 5px;
-        padding-left: 0px;
+        position: relative;
+        width: 75px;
+        top: -1px;
+        left: -2px;
     }
 
     .RCW{
