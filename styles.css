@@ -132,6 +132,28 @@ body{
     display: block;
 }
 
+.nintendoSwitch {
+    color: #B31312;
+}
+
+.nintendoSwitch:hover{
+    color: #3559E0;
+}
+
+.nintendoSwitch::after{
+    content: "Some games I play: Overwatch 2, Puzzle & Indie Games";
+    font-size: 45px;
+    display: none;
+    position: absolute;
+    right: 35%;
+    top: 45%;
+}
+
+.nintendoSwitch:hover::after{
+    display: block;
+    max-width: 400px;
+}
+
 .list h1,
 .list ul {
     display: block;
@@ -198,6 +220,15 @@ body{
 
 .UT:hover {
     color: antiquewhite;
+}
+
+.gongCha {
+    color: #C499F3;
+    text-decoration: none;
+}
+
+.gongCha:hover{
+    color: #E6A4B4;
 }
 
 .UTCS {
@@ -306,6 +337,20 @@ body{
         position: relative;
         width: 120px;
         padding-top: -80px;
+    }
+
+    .nintendoSwitch::after{
+        content: "Some games I play: Overwatch 2, Puzzle & Indie Games";
+        font-size: 45px;
+        display: none;
+        position: absolute;
+        right: 40%;
+        top: 75%;
+    }
+    
+    .nintendoSwitch:hover::after{
+        display: block;
+        max-width: 400px;
     }
 
 }
@@ -543,7 +588,7 @@ body{
     }
 }
   
-.floating-text-up {
+.floating-text-up{
     font-size: 80px;
     animation: floating-up 1s infinite; /* Use the "floating" animation for 2 seconds, and repeat infinitely */
     color: #67729D;
