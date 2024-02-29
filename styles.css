@@ -41,7 +41,7 @@ body{
     text-decoration: none;
     border: 10px solid;
     border-radius: 10px;
-    color: #FFDBC3;
+    color: #FFD1E3;
     display: flex;
     width: auto;
     background-color: hsl(247, 34%, 29%, 0.65);
@@ -188,11 +188,13 @@ body{
 
 .category {
     display: block; /* Make anchor tags block-level to center them */
-    margin-bottom: 20px; /* Add some space between links */
+    margin-bottom: 50px; /* Add some space between links */
     text-decoration: none;
     font-size: 70px;
-    padding-top: 100px;
+    padding: 20px;
     color: #99627A;
+    border: 10px solid;
+    border-radius: 20px;
 }
 
 .category:hover {
@@ -322,7 +324,7 @@ body{
         text-decoration: none;
         border: 7px solid;
         border-radius: 10px;
-        color: #FFDBC3;
+        color: #FFD1E3;
         width: auto;
         background-color: hsl(247, 34%, 29%, 0.65);
         margin-right: 15px;
@@ -401,7 +403,7 @@ body{
         text-decoration: none;
         border: 7px solid;
         border-radius: 10px;
-        color: #FFDBC3;
+        color: #FFD1E3;
         width: auto;
         background-color: hsl(247, 34%, 29%, 0.65);
         margin-right: 15px;
@@ -501,6 +503,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
 }
 
 .title{
