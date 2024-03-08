@@ -31,6 +31,7 @@ body{
 
 .CWTitle {
     color: #83A2FF;
+    margin-top: 100px;
 }
 
 .CWTitle:hover {
@@ -314,10 +315,12 @@ body{
     #bioName {
         font-size: 50px;
         max-height: 200px;
+        color: #67729D;
     }
 
     #bioTitle {
         font-size: 50px;
+        color: #67729D;
     }
 
     .linkOther {
@@ -506,6 +509,15 @@ body{
     margin-top: 50px;
 }
 
+.containerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -100px;
+}
+
 .title{
     color: #FF869E;
 }
@@ -616,4 +628,45 @@ body{
     text-decoration: none;
 }
 
+.newCon {
+
+}
+
+.imgCon{
+    position: relative;
+    top: -100px; /* Adjust this value to vertically center the image */
+    right: -900px; /* Adjust this value to position the image from the right side */
+}
+
+
+@keyframes cursor-blink {
+    0% {
+      border-right: 5px solid transparent;
+    }
+    50% {
+      border-right: 5px solid #67729D;
+    }
+    100% {
+      border-right: 5px solid transparent;
+    }
+  }
+  
+  #typeEff {
+    display: inline-block;
+    color: #67729D;
+    font-size: 60px;
+    margin-left: 200px;
+    margin-top: 100px;
+  }
+  
+  .cursor {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    width: 0;
+    height: 44px;
+    margin-left: -12px;
+    animation: cursor-blink 1s infinite; /* Adjust blink speed */
+  }
+  
 
