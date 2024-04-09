@@ -7,6 +7,8 @@ body{
     padding-bottom: 100px;
     font-family: 'VT323', monospace;
     font-size: 40px;
+    width: 100%;
+    overflow-x:hidden
 }
 
 .shortBio {
@@ -27,6 +29,7 @@ body{
     border: 3px solid;
     border-radius: 20px;
     color: #A25772;
+    margin-bottom: 10px;
 }
 
 .CWTitle {
@@ -203,6 +206,7 @@ body{
 }
 
 .backButton {
+    color: #BE5A83;
     text-decoration: none;
     font-size: 50px;
     padding: 10px 20px;
@@ -212,7 +216,7 @@ body{
 }
 
 .backButton:hover {
-    color: #BE5A83;
+    color: whitesmoke;
 }
 
 
@@ -275,8 +279,8 @@ body{
 @media screen and (max-width: 1600px) {
     .flex-container {
         display: flex;
-        flex-wrap: wrap; /* Allow the items to wrap to the next line */
-        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; 
+        justify-content: center; 
     }
 
     /* Adjust the width of each pixelated-rectangle in smaller screens */
@@ -285,13 +289,14 @@ body{
         height: auto;
         margin: 10px; /* Adjust margin for space between items */
         overflow: hidden;
-        
     }
 
     .pixelated-rectangle img{
-        width: 500px;
-        height: 300px;
-        background-size: cover; /* Image will cover the entire box */
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        background-size: cover; 
         background-position: center;
     }
 
@@ -361,7 +366,7 @@ body{
         display: none;
         position: absolute;
         right: 40%;
-        top: 75%;
+        top: 85%;
     }
     
     .nintendoSwitch:hover::after{
@@ -370,6 +375,35 @@ body{
     }
 
 }
+
+/* For bigger screens */
+@media screen and (min-width: 1601px) {
+
+    .pixelated-rectangle {
+        width: calc(33.33% - 20px); 
+        height: auto;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    .pixelated-rectangle img{
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        background-size: cover; 
+        background-position: center;
+    }
+
+    .imgCon{
+        position: absolute;
+        top: 10%;
+        right: 40%
+    }
+
+
+}
+
 
 /* Responsive styles for smaller (smartphone) screens */
 @media screen and (max-width: 767px) {
@@ -530,16 +564,15 @@ body{
     text-decoration: none;
     text-align: center;
     font-size: 50px;
-    width: 500px; /* Adjust width as needed */
-    height: auto; /* Adjust height as needed */
-    background-color: #3B185F; /* Replace with your desired color code */
-    background-size: 20px 20px; /* Adjust the pixel size */
-    filter: blur(0.5px); /* Blur to create pixelated effect */
+    width: 500px;
+    height: auto; 
+    background-color: #3B185F;
+    background-size: 20px 20px;
     position: relative;
     margin-left:4dvw;
     margin-top:5dvh;
     display: block;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
     align-items: center;
     color: #46458C;
     border-top: 12px solid #4D4C7D;
