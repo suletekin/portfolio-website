@@ -170,6 +170,10 @@ body{
     color: antiquewhite;
 }
 
+.link {
+    margin-bottom: 17px;
+}
+
 .link a:hover{
     color: antiquewhite !important;
 }
